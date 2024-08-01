@@ -28,7 +28,7 @@ import pyConTextNLP.helpers as helpers
 import re
 """helper functions to compute final classification"""
 
-class test_itemData(object):
+class itemData_test(object):
     """This is the class definition that will contain the majority of processing
     algorithms for criticalFinder.
     
@@ -88,7 +88,7 @@ def main():
 
     parser = getParser()
     (options, args) = parser.parse_args()
-    pec = test_itemData(options)
+    pec = itemData_test(options)
     pec.test_itemData()
     
     
