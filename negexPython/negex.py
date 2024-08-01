@@ -152,7 +152,7 @@ class negTagger(object):
                     sentenceTokens[i] = sentenceTokens[i].replace('[PHRASE]', '[POSSIBLE]')
                     sentencePortion = sentencePortion + ' ' + sentenceTokens[i]
             
-                sb3 = sb3 + ' ' + sentenceTokens[i]
+                sb3 = sb3 + [' ' + sentenceTokens[i]] # Fixed list + string error
         
             if sentencePortion.strip():
                 aScopes.append(sentencePortion.strip())
